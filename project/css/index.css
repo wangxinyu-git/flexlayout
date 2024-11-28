@@ -1,0 +1,59 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+div {
+  box-sizing: border-box;
+}
+
+/* 搜索模块 */
+
+.search-index {
+  display: flex;
+  /* 固定定位跟父级没有关系 它以屏幕为准 */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  /* 固定的盒子应该有宽度 */
+  transform: translateX(-50%);
+  width: 100%;
+  height: 44px;
+  min-width: 320px;
+  max-width: 540px;
+  /* background-color: pink; */
+}
+
+.search {
+  flex: 1;
+  height: 26px;
+  border: 1px solid #ccc;
+  margin: 7px 10px;
+  border-radius: 5px;
+}
+
+.user {
+  width: 44px;
+  height: 44px;
+  /* background: purple; */
+  font-size: 12px;
+  text-align: center;
+}
+.user::before{
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin: 4px auto 0;
+}
